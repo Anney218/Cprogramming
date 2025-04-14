@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int isPrime(int num)
+{
+    for(int i=2;i<=sqrt(num); i++)
+    {
+        if(num%i==0)
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+
+int main()
+{
+    cout<<"Please Enter a number greater than 1 : ";
+    int num;
+    cin>>num;
+
+    if(isPrime(num))
+    {
+        cout<<"The Number is Prime"<<endl;
+    }
+    else
+    {
+        cout<<"The Number is not Prime"<<endl;
+    }
+
+
+}
+//isprime output 7
